@@ -1,0 +1,120 @@
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f7f7f7;
+}
+
+/* Estilos para la navegación */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    padding: 1em;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #ccc;
+}
+
+/* Estilos para el contenedor principal */
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+/* Estilos para el título principal y subtítulo */
+
+.titulo-principal {
+    font-size :40px; 
+    text-align:center; 
+    margin-bottom :20px ; 
+    color:#0055ff
+}
+
+.subtitulo{
+    font-size :18px ; 
+    text-align:center; 
+    margin-bottom :30px ;
+    color:#0055ff
+}
+
+ /*Estilos para caracteristicas*/
+
+.caracteristicas{
+    display:flex ;  
+    flex-direction :column ;  
+    align-items:center ;   
+    justify-content:center    
+}
+
+.caracteristicas ul{
+    list-style:none    
+}
+.caracteristicas li{
+     font-size :16px ;
+     padding-top :10px     
+}
+
+ /*Estilos del formulario de suscripcion*/
+.formulario-suscripcion{
+    display:flex ;
+    flex-direction :column ;
+    align-items:center ;
+    justify-content:center;  
+}
+
+.formulario-suscripcion h4{
+    font-size :24px ; 
+    margin-top: 1rem; 
+    margin-bottom :10px   
+}
+
+.formulario-suscripcion input[type="email"]{
+    width :300px ;
+    height :40px ;
+    padding-left :10px ;  
+    border-radius :8px;     
+}  
+
+.formulario-suscripcion button[type="submit"]{      
+    width :150PX;       
+    height :40PX;       
+    background-color:#0055FF;       
+    color:#FFFFFF;       
+    border-radius :8px;
+    margin-top: 0.5rem;      
+} 
+
+/* Media queries para dispositivos móviles */
+@media only screen and (max-width:768 PX){
+    body{font-size:.75em}        
+    .container{max-width:none}          
+    .navbar li {display:block;margin-right:auto;margin-left:auto}           
+    .navbar a {display:block;padding:.5em}
+}
